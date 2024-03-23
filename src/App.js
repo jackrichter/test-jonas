@@ -69,7 +69,7 @@ function Steps() {
               // text="Next"
               // emoji="👉"
             >
-              Next <span>👉</span>
+              Next <span>👉</span> {/* The children prop! */}
             </Button>
             {/* <button style={{ backgroundColor: "#7950f2", color: "#fff" }} onClick={handlePrevious}>
               Previous
