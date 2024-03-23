@@ -57,16 +57,20 @@ function Steps() {
               bgColor="#7950f2"
               textColor="#fff"
               onClick={handlePrevious}
-              text="Previous"
-              emoji="👈"
-            />
+              // text="Previous"
+              // emoji="👈"
+            >
+              <span>👈</span> Previous
+            </Button>
             <Button
               bgColor="#7950f2"
               textColor="#fff"
               onClick={handleNext}
-              text="Next"
-              emoji="👉"
-            />
+              // text="Next"
+              // emoji="👉"
+            >
+              Next <span>👉</span>
+            </Button>
             {/* <button style={{ backgroundColor: "#7950f2", color: "#fff" }} onClick={handlePrevious}>
               Previous
             </button>
@@ -81,10 +85,11 @@ function Steps() {
 }
 
 // A reusable Button (children Prop)
-function Button({ textColor, bgColor, onClick, text, emoji }) {
+function Button({ textColor, bgColor, onClick, children }) {
   return (
     <button style={{ backgroundColor: bgColor, color: textColor }} onClick={onClick}>
-      <span>{emoji}</span> {text}
+      {/* <span>{emoji}</span> {text} */}
+      {children}
     </button>
   );
 }
